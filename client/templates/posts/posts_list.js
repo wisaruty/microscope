@@ -9,7 +9,7 @@ var postsData =[
     },
     {
         title:'The Meteor Book',
-        url:'http//themeteorbook.com'
+        url:'http://themeteorbook.com'
     }
 ];
 Template.postsList.helpers({
