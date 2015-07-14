@@ -1,0 +1,4 @@
+Router.configure({
+	LayoutTemplate: 'layout'
+});
+Router.route("/",{name,'postsList'});
