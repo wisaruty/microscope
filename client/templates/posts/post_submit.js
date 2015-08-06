@@ -18,7 +18,6 @@ Template.postSubmit.events({
       url: $(e.target).find('[name=url]').val(),
       title: $(e.target).find('[name=title]').val()
     };
-
     var errors = validatePost(post);
     if (errors.title || errors.url) {
       return Session.set('postSubmitErrors',errors);
@@ -28,7 +27,6 @@ Template.postSubmit.events({
         return throwError(error.reason);
       if(result.postExists)
         throwError('This link has already benn posted');
-      
       Router.go('postPage',{_id: result._id});
     });
   }
