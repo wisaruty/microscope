@@ -28,7 +28,8 @@ Template.postSubmit.events({
         return throwError(error.reason);
       if(result.postExists)
         throwError('This link has already benn posted');
+      
       Router.go('postPage',{_id: result._id});
-    })
+    });
   }
 });
